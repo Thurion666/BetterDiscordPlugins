@@ -5,8 +5,8 @@
  * @author Thurion#8885
  * @authorId 219612697002508288
  * @authorLink https://github.com/Thurion666/
- * @source https://github.com/Thurion666/BetterDiscordPlugins/edit/main/MemeSounds/MemeSoundsThurion.plugin.js
- * @updateUrl https://raw.githubusercontent.com/Thurion666/BetterDiscordPlugins/edit/main/MemeSounds/MemeSoundsThurion.plugin.js
+ * @source https://github.com/Thurion666/BetterDiscordPlugins/blob/main/MemeSounds/MemeSoundsThurion.plugin.js
+ * @updateUrl https://raw.githubusercontent.com/Thurion666/BetterDiscordPlugins/main/MemeSounds/MemeSoundsThurion.plugin.js
  */
 
 module.exports = (() => {
