@@ -1,6 +1,6 @@
 /**
  * @name MemeSoundsThurion
- * @version 0.6.1
+ * @version 0.6.2
  * @description Plays Memetastic sounds depending on what is being sent in chat. This was heavily inspired by the idea of Metalloriff's bruh plugin so go check him out!
  * @author Thurion#8885
  * @authorId 219612697002508288
@@ -12,7 +12,7 @@
 module.exports = (() => {
 	
 	/* Configuration */
-	const config = {info: {name: "Meme Sounds Thurion", authors: [{name: "Thurion#8885", discord_id: "219612697002508288", github_username: "Thurion666", twitter_username: "Thurión"}], version: "0.6.1", description: "Plays Memetastic sounds depending on what is being sent in chat. This was heavily inspired by the idea of Metalloriff's bruh plugin so go check him out!", github: "https://github.com/Thurion666/BetterDiscordPlugins/blob/main/MemeSounds/MemeSoundsThurion.plugin.js", github_raw: "https://raw.githubusercontent.com/Thurion666/BetterDiscordPlugins/main/MemeSounds/MemeSoundsThurion.plugin.js"}, defaultConfig: [{id: "setting", name: "Sound Settings", type: "category", collapsible: true, shown: true, settings: [{id: "LimitChan", name: "Limit to the current channel only.", note: "When enabled, sound effects will only play within the currently selected channel.", type: "switch", value: true}, {id: "delay", name: "Sound effect delay.", note: "The delay in miliseconds between each sound effect.", type: "slider", value: 200, min: 10, max: 1000, renderValue: v => Math.round(v) + "ms"}, {id: "volume", name: "Sound effect volume.", note: "How loud the sound effects will be.", type: "slider", value: 1, min: 0.01, max: 1, renderValue: v => Math.round(v*100) + "%"}]}], changelog: [{title: "New Stuff", items: ["simplified the code", "fixed oof and bruh sounds not playing", "fixed sound timings", "fixed sounds not being played in the order they are written", "fixed sound overlapping", "added volume slider in settings", "Added new sounds", "fixed the update implementation to my own"]}]};
+	const config = {info: {name: "Meme Sounds Thurion", authors: [{name: "Thurion#8885", discord_id: "219612697002508288", github_username: "Thurion666", twitter_username: "Thurión"}], version: "0.6.2", description: "Plays Memetastic sounds depending on what is being sent in chat. This was heavily inspired by the idea of Metalloriff's bruh plugin so go check him out!", github: "https://github.com/Thurion666/BetterDiscordPlugins/blob/main/MemeSounds/MemeSoundsThurion.plugin.js", github_raw: "https://raw.githubusercontent.com/Thurion666/BetterDiscordPlugins/main/MemeSounds/MemeSoundsThurion.plugin.js"}, defaultConfig: [{id: "setting", name: "Sound Settings", type: "category", collapsible: true, shown: true, settings: [{id: "LimitChan", name: "Limit to the current channel only.", note: "When enabled, sound effects will only play within the currently selected channel.", type: "switch", value: true}, {id: "delay", name: "Sound effect delay.", note: "The delay in miliseconds between each sound effect.", type: "slider", value: 200, min: 10, max: 1000, renderValue: v => Math.round(v) + "ms"}, {id: "volume", name: "Sound effect volume.", note: "How loud the sound effects will be.", type: "slider", value: 1, min: 0.01, max: 1, renderValue: v => Math.round(v*100) + "%"}]}], changelog: [{title: "New Stuff", items: ["New sounds V2"]}]};
 
 	/* Library Stuff */
 	return !global.ZeresPluginLibrary ? class {
@@ -37,7 +37,25 @@ module.exports = (() => {
 				{re: /bruh/gmi, file: "bruh.mp3", duration: 470},
 				{re: /pain/gmi, file: "pain.mp3", duration: 470},
 				{re: /nigga/gmi, file: "itai.mp3", duration: 3000},
-				{re: /bpm/gmi, file: "bpm.mp3", duration: 4000}
+				{re: /bpm/gmi, file: "bpm.mp3", duration: 4000},
+				{re: /ara ara/gmi, file: "ara ara.mp3", duration: 400},
+				{re: /bye/gmi, file: "bye.mp3", duration: 1200},
+				{re: /mo?? power baby/gmi, file: "baby.mp3", duration: 1500},
+				{re: /coffee/gmi, file: "coffee.mp3", duration: 600},
+				{re: /drink/gmi, file: "drink.mp3", duration: 700},
+				{re: /emotional damage/gmi, file: "emotional damage.mp3", duration: 2000},
+				{re: /hello there/gmi, file: "hello there.mp3", duration: 700},
+				{re: /ho yah/gmi, file: "ho yah.mp3", duration: 2000},
+				{re: /knock knock/gmi, file: "knock knock.mp3", duration: 5000},
+				{re: /kyle/gmi, file: "kyle.mp3", duration: 1200},
+				{re: /let?s do this/gmi, file: "lets do this.mp3", duration: 1100},
+				{re: /let?s go/gmi, file: "lets go.mp3", duration: 3000},
+				{re: /macaroni/gmi, file: "macaroni.mp3", duration: 6500},
+				{re: /nashe/gmi, file: "nashe.mp3", duration: 4100},
+				{re: /ok/gmi, file: "ok.mp3", duration: 300},
+				{re: /waky waky/gmi, file: "waky.mp3", duration: 3100},
+				{re: /wtf/gmi, file: "wtf.mp3", duration: 8300},
+				{re: /yeet/gmi, file: "yeet.mp3", duration: 1800}
 			];
 
 			/* Double message event fix */
