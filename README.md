@@ -1,2 +1,2 @@
 # BetterDiscordPlugins
-Better Discord plugins that i've created
+Better Discord plugins forked from Lonk12
