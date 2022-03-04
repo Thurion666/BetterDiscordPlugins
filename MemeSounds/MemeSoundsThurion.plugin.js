@@ -5,8 +5,8 @@
  * @author Thurion#8885
  * @authorId 219612697002508288
  * @authorLink https://github.com/Thurion666/
- * @source https://github.com/Thurion666/BetterDiscordPlugins/edit/main/MemeSounds/MemeSounds.plugin.js
- * @updateUrl https://raw.githubusercontent.com/Thurion666/BetterDiscordPlugins/edit/main/MemeSounds/MemeSounds.plugin.js
+ * @source https://github.com/Thurion666/BetterDiscordPlugins/edit/main/MemeSounds/MemeSoundsThurion.plugin.js
+ * @updateUrl https://raw.githubusercontent.com/Thurion666/BetterDiscordPlugins/edit/main/MemeSounds/MemeSoundsThurion.plugin.js
  */
 
 module.exports = (() => {
@@ -34,8 +34,8 @@ module.exports = (() => {
 				{re: /no?ice/gmi, file: "noice.mp3", duration: 600},
 				{re: /bazinga/gmi, file: "bazinga.mp3", duration: 550},
 				{re: /oof/gmi, file: "oof.mp3", duration: 250},
-				{re: /bruh/gmi, file: "bruh.mp3", duration: 470}
-				{re: /ah/gmi, file: "ah.mp3", duration: 470}
+				{re: /bruh/gmi, file: "bruh.mp3", duration: 470},
+				{re: /ah/gmi, file: "ah.mp3", duration: 470},
 				{re: /nigga/gmi, file: "itai.mp3", duration: 470}
 			];
 
@@ -68,7 +68,7 @@ module.exports = (() => {
 								queue.set(match.index, sound);
 						}
 						for (let sound of [...queue.entries()].sort((a, b) => a[0] - b[0])) {
-							let audio = new Audio("https://github.com/Lonk12/BetterDiscordPlugins/raw/main/MemeSounds/Sounds/"+sound[1].file);
+							let audio = new Audio("https://github.com/Thurion666/BetterDiscordPlugins/raw/main/MemeSounds/Sounds/"+sound[1].file);
 							audio.volume = this.settings.setting.volume;
 							audio.play();
 							await new Promise(r => setTimeout(r, sound[1].duration+this.settings.setting.delay));
