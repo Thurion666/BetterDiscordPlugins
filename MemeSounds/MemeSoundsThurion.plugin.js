@@ -12,7 +12,7 @@
  module.exports = (() => {
 	
 	/* Configuration */
-	const config = {info: {name: "Meme Sounds Thurion", authors: [{name: "Thurion#8885", discord_id: "219612697002508288", github_username: "Thurion666", twitter_username: "Thurión"}], version: "0.7.4", description: "Plays Memetastic sounds depending on what is being sent in chat. This was heavily inspired by the idea of Metalloriff's bruh plugin so go check him out!", github: "https://github.com/Thurion666/BetterDiscordPlugins/blob/main/MemeSounds/MemeSoundsThurion.plugin.js", github_raw: "https://raw.githubusercontent.com/Thurion666/BetterDiscordPlugins/main/MemeSounds/MemeSoundsThurion.plugin.js"}, defaultConfig: [{id: "setting", name: "Sound Settings", type: "category", collapsible: true, shown: true, settings: [{id: "LimitChan", name: "Limit to the current channel only.", note: "When enabled, sound effects will only play within the currently selected channel.", type: "switch", value: true}, {id: "delay", name: "Sound effect delay.", note: "The delay in miliseconds between each sound effect.", type: "slider", value: 200, min: 10, max: 1000, renderValue: v => Math.round(v) + "ms"}, {id: "volume", name: "Sound effect volume.", note: "How loud the sound effects will be.", type: "slider", value: 1, min: 0.01, max: 1, renderValue: v => Math.round(v*100) + "%"}]}], changelog: [{title: "New", items: ["New sounds!"]},{title: "new sounds", items: ["Step bro", "lemme smash", "can't believe", "here we go"]},{title: "Fixes", items: ["Fixed some timings on the sound durations (this time FR calculated)"]}]};
+	const config = {info: {name: "Meme Sounds Thurion", authors: [{name: "Thurion#8885", discord_id: "219612697002508288", github_username: "Thurion666", twitter_username: "Thurión"}], version: "0.7.5", description: "Plays Memetastic sounds depending on what is being sent in chat. This was heavily inspired by the idea of Metalloriff's bruh plugin so go check him out!", github: "https://github.com/Thurion666/BetterDiscordPlugins/blob/main/MemeSounds/MemeSoundsThurion.plugin.js", github_raw: "https://raw.githubusercontent.com/Thurion666/BetterDiscordPlugins/main/MemeSounds/MemeSoundsThurion.plugin.js"}, defaultConfig: [{id: "setting", name: "Sound Settings", type: "category", collapsible: true, shown: true, settings: [{id: "LimitChan", name: "Limit to the current channel only.", note: "When enabled, sound effects will only play within the currently selected channel.", type: "switch", value: true}, {id: "delay", name: "Sound effect delay.", note: "The delay in miliseconds between each sound effect.", type: "slider", value: 200, min: 10, max: 1000, renderValue: v => Math.round(v) + "ms"}, {id: "volume", name: "Sound effect volume.", note: "How loud the sound effects will be.", type: "slider", value: 1, min: 0.01, max: 1, renderValue: v => Math.round(v*100) + "%"}]}], changelog: [{title: "New", items: ["New sounds!"]},{title: "new sounds", items: ["Ahhh", "Replaced wtf sound"]}]};
 
 	/* Library Stuff */
 	return !global.ZeresPluginLibrary ? class {
@@ -80,7 +80,8 @@
 				{re: /lemme smash/gmi, file: "lemme smash.mp3", duration: 1100},
 				{re: /can'?t believe/gmi, file: "cant believe.mp3", duration: 2600},
 				{re: /step bro/gmi, file: "step bro.mp3", duration: 3000},
-				{re: /here we go/gmi, file: "here we go.mp3", duration: 1500}
+				{re: /here we go/gmi, file: "here we go.mp3", duration: 1500},
+				{re: /ahhh/gmi, file: "ahhh.mp3", duration: 1500}
 			];
 
 			/* Double message event fix */
