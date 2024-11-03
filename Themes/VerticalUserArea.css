@@ -22,13 +22,8 @@
   width: var(--guilds-width, 72px);
   height: auto;
   border-top: none;
-  margin-top: 10px; /* Añade un margen superior */
 }
 
-/* Si necesitas un margen superior específico para el cuarto botón */
-#app-mount .panels_a4d4d9 > .container_b2ca13 > [style="flex: 0 1 auto;"] .button_adca65:nth-child(4) {
-  margin-top: 20px; /* Ajusta este valor según sea necesario */
-}
 #app-mount .panels_a4d4d9 > .container_b2ca13 > [style="flex: 0 1 auto;"] {
   flex-direction: column;
   width: 100%;
@@ -38,6 +33,12 @@
   border-radius: 0;
   padding: 12px 0;
   height: auto;
+  margin-top: 10px; /* Añade un margen superior */
+}
+
+/* Si necesitas un margen superior específico para el cuarto botón */
+#app-mount .panels_a4d4d9 > .container_b2ca13 > [style="flex: 0 1 auto;"] .button_adca65:nth-child(4) {
+  margin-top: 20px; /* Ajusta este valor según sea necesario */
 }
 #app-mount .panels_a4d4d9 > .container_b2ca13 .avatarWrapper_b2ca13 {
   margin-right: 0;
