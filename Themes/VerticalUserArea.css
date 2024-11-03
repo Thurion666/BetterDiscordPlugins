@@ -12,9 +12,6 @@
 #app-mount .guilds_a4d4d9 .footer_aa1bff .listItem_c96c45 {
   margin-bottom: 0px;
 }
-#app-mount .panels_a4d4d9 {
-  margin-top: 3em; /* Ajusta este valor según sea necesario */
-}
 #app-mount .panels_a4d4d9 > .container_b2ca13 {
   background: transparent;
   position: fixed;
@@ -25,6 +22,7 @@
   width: var(--guilds-width, 72px);
   height: auto;
   border-top: none;
+  margin-top: 3em; /* Ajusta este valor según sea necesario */
 }
 #app-mount .panels_a4d4d9 > .container_b2ca13 > [style="flex: 0 1 auto;"] {
   flex-direction: column;
