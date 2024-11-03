@@ -18,7 +18,7 @@
   bottom: 0;
   left: 0;
   flex-direction: column-reverse;
-  padding: 0 24 24px;
+  padding: 0 0 24px 24px;
   width: var(--guilds-width, 72px);
   height: auto;
   border-top: none;
