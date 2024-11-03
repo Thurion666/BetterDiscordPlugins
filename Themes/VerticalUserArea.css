@@ -52,6 +52,7 @@
 #app-mount .avatarWrapper_b2ca13 {
   margin: 0;
   min-width: unset;
+  margin-top: 2em;
 }
 #app-mount .avatarWrapper_b2ca13:hover {
   background: transparent;
