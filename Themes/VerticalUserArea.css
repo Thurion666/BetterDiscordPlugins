@@ -35,7 +35,7 @@
 }
 #app-mount .panels_a4d4d9 > .container_b2ca13 .avatarWrapper_b2ca13 {
   margin-right: 0;
-  margin-top: 12px;
+  margin-top: 24px;
 }
 #app-mount .panels_a4d4d9 > .container_b2ca13 .avatarWrapper_b2ca13 .svg_c51b4e {
   width: 50px;
@@ -52,7 +52,6 @@
 #app-mount .avatarWrapper_b2ca13 {
   margin: 0;
   min-width: unset;
-  margin-top: 2em;
 }
 #app-mount .avatarWrapper_b2ca13:hover {
   background: transparent;
