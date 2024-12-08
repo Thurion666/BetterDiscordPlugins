@@ -1,8 +1,8 @@
 #app-mount .guilds_a4d4d9 .tree_fea3ef {
   outline: none !important;
 }
-.custom-theme-background .itemsContainer_fea3ef {
-    background: transparent;
+#app-mount .custom-theme-background .itemsContainer_fea3ef {
+  background: transparent;
 }
 #app-mount .guilds_a4d4d9 .unreadMentionsIndicatorBottom_fea3ef {
   bottom: calc(var(--user-area) + 10px);
